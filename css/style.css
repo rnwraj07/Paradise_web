@@ -1,0 +1,777 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #16161A;
+    --primary-color: #a8b1bd;
+    --hover-color: #7F5AF0;
+    --white-color: #fff;
+    --black-color: #010101;
+    --hover-color2: #2cb67d;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main1 {
+    height: 100vh;
+    background-image: url(../image/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main1 .container .content {
+    padding: 30px;
+}
+
+.main1 .container .content h1 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all .5s;
+    color: var(--primary-color);
+}
+
+.main1 .container .content h1:hover {
+    color: var(--white-color);
+}
+
+.main1 .container .imgcnt2 p {
+    font-size: 80px;
+    line-height: 90px;
+    color: var(--white-color);
+    margin-top: 125px;
+}
+
+.main1 .container .content p {
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.main1 .container .content p:hover {
+    color: var(--white-color);
+}
+
+.main1 .container .content select {
+    color: var(--primary-color);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    transition: all .5s;
+}
+
+.main1 .container .content select:hover {
+    color: var(--white-color);
+}
+
+
+.main1 .container .content a {
+    text-decoration: none;
+    font-size: 12px;
+    z-index: 1;
+    transition: all .5s;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    border-color: transparent;
+    border: 1px solid #fff;
+    padding: 15px 30px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.main1 .container .imgcnt {
+    width: 50%;
+}
+
+.main1 .container .imgcnt2 {
+    width: 50%;
+}
+
+.main1 .container .content a:before {
+    content: '';
+    position: absolute;
+    top: -110%;
+    left: 0;
+    z-index: -1;
+    border: 1px solid var(--hover-color);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: var(--hover-color);
+    transition: .5s;
+}
+
+.main1 .container .imgcnt2 .p:hover {
+    color: var(--white-color);
+}
+
+.main1 .container .maincnt .imgcnt2 a {
+    text-decoration: none;
+    font-size: 14px;
+    z-index: 1;
+    background-color: var(--background-color);
+    margin-top: 100px;
+    transition: all .5s;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    padding: 15px 30px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.main1 .container a:before {
+    content: '';
+    position: absolute;
+    top: -110%;
+    left: 0;
+    z-index: -1;
+    border: 1px solid var(--hover-color);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: var(--hover-color);
+    transition: .5s;
+}
+
+.main1 .container a:hover::before {
+    top: 0;
+}
+
+.main1 .container .content a:hover {
+    color: var(--white-color);
+}
+
+.main1 .container .maincnt .imgcnt2 a:hover {
+    top: 0;
+    color: var(--white-color);
+}
+
+.main2 {
+    position: relative;
+}
+
+.main2 h1 {
+    position: absolute;
+    color: var(--white-color);
+    top: 170px;
+    left: 450px;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.main2 .container .content .cnt1 {
+    width: 40%;
+    color: var(--primary-color);
+    font-weight: 300;
+    margin-top: 350px;
+    letter-spacing: 1px;
+    padding: 0 45px;
+    font-family: poppins;
+} 
+
+.main2 .container .content .cnt2 {
+    width: 60%;
+    background-color: var(--black-color);
+    margin-top: 50px;
+}
+
+.main2 .container .content .cnt2 img {
+    width: 550px;
+    padding: 100px 0px 70px 160px;
+}
+
+.main2 .container .content a {
+    text-decoration: none;
+    font-size: 16px;
+    z-index: 1;
+    margin-top: 30px;
+    transition: all .5s;
+    letter-spacing: 2px;
+    color: var(--hover-color);
+    border-color: transparent;
+    border: 1px solid var(--hover-color);
+    padding: 15px 30px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.main2 .container .content a::before {
+    content: '';
+    position: absolute;
+    top: -110%;
+    left: 0;
+    z-index: -1;
+    border: 1px solid var(--hover-color);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: var(--hover-color);
+    transition: all .5s;
+}
+
+.main2 .container .content a:hover::before {
+    top: 0;
+}
+
+.main2 .container .content a:hover {
+    color: var(--white-color);
+}
+
+.main3 {
+    position: relative;
+    margin-top: 100px;
+}
+.main3 h1 {
+    position: absolute;
+    color: var(--white-color);
+    top: 170px;
+    left: 800px;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.main3 .container .content .cnt1 {
+    width: 40%;
+    color: var(--primary-color);
+    font-weight: 300;
+    margin-top: 350px;
+    letter-spacing: 1px;
+    padding: 0 45px;
+    font-family: poppins;
+} 
+.main3 .container .content .cnt2 {
+    width: 60%;
+    background-color: var(--black-color);
+    margin-top: 50px;
+}
+
+.main3 .container .content .cnt2 img {
+    width: 550px;
+    padding: 100px 0px 70px 70px;
+}
+
+.main4 {
+    margin-top: 100px;
+}
+
+.main4 h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: center;
+}
+
+.main4 img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin-top: 50px;
+}
+.main4 p {
+    color: var(--primary-color);
+    font-family: poppins;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 100px;
+}
+
+.mainx h1 {
+    color: var(--white-color);
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.main5 {
+    margin-top: 40px;
+    position: relative;
+}
+
+.main5 .container .content .box{
+    width: 50%;
+    background-color: white;
+    color: var(--background-color);
+    height: 500px;
+    padding: 100px;
+    z-index: 1;
+}
+
+.main5 .container .subbox {
+    width: 830px;
+    height: 610px;
+    background-color: var(--black-color);
+    position: absolute;
+    z-index: -1;
+    top: -60px;
+    left: 600px;
+}
+
+.main5 .container .content .box h1 {
+    color: var(--background-color);
+    font-size: 50px;
+    transition: all .5s;
+    font-weight: 300;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.main5 .container .content .box p {
+    font-family: poppins;   
+    line-height: 20px;
+    margin-top: 25px;
+    cursor : pointer;
+}
+.main5 .container .content .box2 {
+    width: 50%;
+    height: 500px;
+}
+.main5 .container .content .box2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.main5 .container .content .box .btn a {
+    text-decoration: none;
+    font-size: 14px;
+    z-index: 1;
+    font-family: poppins;
+    margin-top: 30px;
+    transition: all .5s;
+    letter-spacing: 2px;
+    color: var(--hover-color);
+    border-color: transparent;
+    border: 1px solid var(--hover-color);
+    padding: 15px 30px;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.main5 .container .content a::before {
+    content: '';
+    position: absolute;
+    top: -110%;
+    left: 0;
+    z-index: -1;
+    border: 1px solid var(--hover-color);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: var(--hover-color);
+    transition: all .5s;
+}
+
+.main5 .container .content a:hover::before {
+    top: 0;
+}
+
+.main5 .container .content .box .btn a:hover {
+    color: var(--white-color);
+}
+
+.main5 .container .content .box h1:hover {
+    color: var(--hover-color2);
+}
+
+.main6 {
+    position: relative;
+}
+
+.main6 .subbox {
+    position: absolute;
+    background-color: var(--black-color);
+    width: 1150px;
+    height: 450px;
+    top: 300px;
+    z-index: -1;
+    left: 100px;
+}
+
+.main6 .container .content h1 {
+    color: var(--white-color);
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: 200px;
+}
+
+.main6 .container .content {
+    text-align: center;
+}
+
+.main6 .container .content p {
+    font-family: poppins;
+    line-height: 20px;
+    color: var(--primary-color);
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 25px;
+    cursor : pointer;
+    line-height: 30px;
+}
+.main6 .container .content img {
+    width: 100%;
+    z-index: 1;
+    margin-top: 30px;
+}
+
+.main7 {
+    position: relative;
+    margin-top: 250px;
+}
+
+.main7 h1 {
+    color: var(--white-color);
+    font-size: 70px;
+    position: absolute;
+    left: 500px;
+    transition: all .5s;
+    font-weight: 300;
+    cursor: pointer;
+    top: -130px;
+    left: 785px;
+}
+
+.main7 .subbox {
+    position: absolute;
+    background-color: var(--black-color);
+    width: 780px;
+    top: -80px;
+    left: 670px;
+    z-index: -1;
+    height: 650px;
+}
+
+.main7 .container .content .cnt {
+    width: 50%;
+}
+
+.main7 .container .content .cnt2 {
+    width: 50%;
+}
+
+.main7 .container .content .cnt .box {
+    width: 100%;
+    padding: 30px;
+}
+
+.main7 .container .content .cnt .box .sub img {
+    width: 100%;
+    display: block;
+    background-size: cover;
+}
+
+.main7 .container .content .cnt .box .sub {
+    width: 100%;
+    height: 200px;
+}
+
+.main7 .container .content .cnt .box h2 {
+    color: var(--white-color);
+    font-weight: 300;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all .5s;
+    margin-top: 60px;
+}
+
+.main7 .container .content .cnt .box h2:hover {
+    color: var(--hover-color2);
+}
+
+.main7 .container .content .cnt2 .box h2 {
+    color: var(--white-color);
+    font-weight: 300;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all .5s;
+    margin-top: 60px;
+}
+
+.main7 .container .content .cnt2 .box h2:hover {
+    color: var(--hover-color2);
+}
+
+.main7 .container .content .cnt .box p {
+    color: var(--primary-color);
+    font-size: 14px;
+    margin-top: 30px;
+    font-family: poppins;
+}
+
+.main7 .container .content .cnt2 .box p {
+    color: var(--primary-color);
+    font-size: 14px;
+    margin-top: 30px;
+    font-family: poppins;
+}
+
+.main7 .container .content .cnt2 .box {
+    width: 100%;
+    padding: 30px;
+}
+
+.main7 .container .content .cnt2 .box .sub img {
+    width: 100%;
+    background-size: cover;
+    display: block;
+}
+
+.main7 .container .content .cnt2 .box .sub {
+    width: 100%;
+    height: 200px;
+}
+
+.main7 .container .content .cnt .box .btn a {
+    text-decoration: none;
+    font-size: 14px;
+    z-index: 1;
+    font-family: poppins;
+    margin-top: 30px;
+    transition: all .5s;
+    letter-spacing: 2px;
+    color: var(--hover-color);
+    border-color: transparent;
+    border: 1px solid var(--hover-color);
+    padding: 15px 30px;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.main7 .container .content .cnt .box .btn a::before {
+    content: '';
+    position: absolute;
+    top: -110%;
+    left: 0;
+    z-index: -1;
+    border: 1px solid var(--hover-color);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: var(--hover-color);
+    transition: all .5s;
+}
+
+.main7 .container .content .cnt .box .btn a:hover::before{
+    top: 0;
+}
+
+.main7 .container .content .cnt .box .btn a:hover {
+    color: var(--white-color);
+}
+
+.main7 .container .content .cnt2 .box .btn a {
+    text-decoration: none;
+    font-size: 14px;
+    z-index: 1;
+    font-family: poppins;
+    transition: all .5s;
+    letter-spacing: 2px;
+    color: var(--hover-color);
+    border-color: transparent;
+    border: 1px solid var(--hover-color);
+    padding: 15px 30px;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.main7 .container .content .cnt2 .box .btn a::before {
+    content: '';
+    position: absolute;
+    top: -110%;
+    left: 0;
+    z-index: -1;
+    border: 1px solid var(--hover-color);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: var(--hover-color);
+    transition: all .5s;
+}
+
+.main7 .container .content .cnt2 .box .btn a:hover::before{
+    top: 0;
+}
+
+.main7 .container .content .cnt2 .box .btn a:hover {
+    color: var(--white-color);
+}
+
+.main8 {
+    margin-top: 200px;
+}
+
+.main8 .container .content .cnt {
+    width: 50%;
+}
+
+.main8 .container .content .cnt2 {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.main8 .container .content .cnt h1 {
+    color: var(--white-color);
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.main8 .container .content .cnt2 input {
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.main8 .container .content .cnt2 button {
+    padding: 15px;
+    background-color: var(--hover-color);
+    transition: all .5s;
+}
+
+.main8 .container .content .cnt2 button a {
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 30px;
+    font-size: 16px;
+}
+
+.main8 .container .content .cnt2 button a:hover {
+    color: var(--hover-color);
+}
+
+.main8 .container .content .cnt2 button:hover {
+    background-color: transparent;
+    border: 1px solid var(--hover-color);
+}
+
+.main8 .container .content .cnt2 .btn a {
+    text-decoration: none;
+    font-size: 14px;
+    z-index: 1;
+    font-family: poppins;
+    margin-top: 30px;
+    transition: all .5s;
+    letter-spacing: 2px;
+    color: var(--hover-color);
+    border-color: transparent;
+    border: 1px solid var(--hover-color);
+    padding: 15px 30px;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.main8 .container .content .cnt2 .btn a::before {
+    content: '';
+    position: absolute;
+    top: -110%;
+    left: 0;
+    z-index: -1;
+    border: 1px solid var(--hover-color);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: var(--hover-color);
+    transition: all .5s;
+}
+
+.main8 .container .content .cnt2 .btn a:hover::before {
+    top: 0;
+}
+
+.main8 .container .content .cnt2 .btn a:hover {
+    color: var(--white-color);
+}
+
+footer {
+    margin-top: 150px;
+}
+
+footer h1 {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+footer .container .content p {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: 300;
+}
+hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer .container .content2 {
+    padding: 30px 0;
+} 
+
+footer .container .content2 h3{
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: poppins;
+}
+
+footer .container .content2 h4 {
+    color: var(--primary-color);
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+footer .container .content2 h4 span {
+    color: var(--hover-color);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+footer .container .content2 h4 span:hover {
+    color: var(--hover-color2);
+}
